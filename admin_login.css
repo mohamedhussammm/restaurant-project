@@ -11,4 +11,11 @@ width: 40%;
 background-color: rgb(197, 210, 210);
 height: 50%;
 }
-
+form {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 500px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 5px;
+}
