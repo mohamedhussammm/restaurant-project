@@ -1,4 +1,5 @@
+          /* Slide Show */
 .mySlides {
-    display: flexbox;
-    width: 30%;
+    display: grid ;
+    width: 20%;
 }
