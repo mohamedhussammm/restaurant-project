@@ -1,1 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+#left{
+    position:relative;
+left: 50%;
+bottom: 50px;;
+transform: translateX(-50%);
+width: 40%;
+background-color: rgb(197, 210, 210);
+height: 50%;
+}
 
