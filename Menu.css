@@ -1,5 +1,15 @@
-          /* Slide Show */
+/* Slide Show */
+
+.slideShow{
+    position: relative;
+}
+.slideShow .wrapper{
+    width: 60vw;
+    height: 75vw;
+    box-shadow: 10px;
+    margin: auto;
+}
 .mySlides {
-    display: grid ;
-    width: 20%;
+    display: none;    
+    width: 30%;
 }
