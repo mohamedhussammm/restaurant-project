@@ -65,3 +65,11 @@ button{
     font-family: 'Times New Roman', Times, serif;
     
     }
+    .account{
+        text-align: center;
+    }
+    .error {
+        color: red;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
