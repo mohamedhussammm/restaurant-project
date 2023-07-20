@@ -1,0 +1,23 @@
+body{
+   
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    font-family: 'Courier New';
+}
+.container{
+    width: 400px;
+    height: 900px;
+    margin: auto;
+    background-color: rgb(183, 195, 205);
+    border-radius: 20px;
+    opacity: 90%;
+ }
+ h1{
+    color: black;
+    text-align: center;
+    padding-top: 25px;
+    border-bottom: solid 1px black;
+    padding-bottom: 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
