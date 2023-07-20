@@ -14,3 +14,9 @@ myIndex = 1
 x[myIndex-1].style.display = "block";  
 setTimeout(carousel, 2000); // Change image every 2 seconds
 }
+let current="ordd";
+            function change_view(target){
+                document.getElementById(current).style.display='none';
+                document.getElementById(target).style.display='block';
+                current=target;
+            }

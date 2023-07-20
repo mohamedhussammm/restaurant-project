@@ -7,46 +7,298 @@
         <link rel="stylesheet" href="Menu.css">
         <script src="Menu.js"></script>
     </head>
-    <body>
-
-        <!-- slideShow -->
-        <div class="background_image">
-            <div class="slideShow">
-                <div class="wrapper"style="max-width:400px">
-                    <div class="Images">
-                        <img class="mySlides" src="Images/pexels-chan-walrus-958545.jpg" >
-                        <img class="mySlides" src="Images/download.jfif" >
-                        <img class="mySlides" src="Images/download (2).jfif" >
-                        <img class="mySlides" src="Images/download (1).jfif" >
-                    </div>
-                    
-                </div> 
-            </div>
+    <script>
+        let current="ordd";
+        function change_view(target){
+            document.getElementById(current).style.display='none';
+            document.getElementById(target).style.display='block';
+            current=target;
+        }
+    </script>
+    <body>       
+        <div class="side_panel">
+            <ul>
+                <li onclick="change_view('drk')"><span> Drinks</span></li>
+                <li onclick="change_view('brk')"><span> Breakfast</span></li>
+                <li onclick="change_view('lun')"><span> Lunch</span></li>
+                <li onclick="change_view('din')"><span> Dinner</span></li>
+                <li onclick="change_view('com')"><span> Composes.</span></li>
+            </ul>
         </div>
-        
+        <div class="right">
+
+            <!-- drinks -->
+            <div class="drinks" style="display: none;" id="drk">
+                <div class="heading">
+                    <h1>DRINKS</h1>
+                    <h3>&mdash;Menu info&mdash;</h3>
+                    <div class="dd">
+                        <button class="ad">Add</button>
+                    </div>
+                </div>
+                <div class="drink-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/drinks.jpg" >
+                </div>
+                <div class="details-d">
+                    <div class="details-sub-d">
+                        <h5>Soda</h5>
+                        <h5 class="price"> 10 LE </h5>
+                    </div>
+                    <p> Soda with ice in a cup</p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>
+                <div class="drink-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/mango.jfif">
+                </div>
+                <div class="details-d">
+                    <div class="details-sub-d">
+                        <h5>Mango Juice</h5>
+                        <h5 class="price"> 20 LE </h5>
+                    </div>
+                    <p> Fresh mango juice </p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>
+                <div class="drink-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/orange.jfif">
+                </div>
+                <div class="details-d">
+                    <div class="details-sub-d">
+                        <h5>orange Juice</h5>
+                        <h5 class="price"> 20 LE </h5>
+                    </div>
+                    <p> Fresh orange juice </p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>
+                <div class="drink-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/chocolate milkshake.jfif">
+                </div>
+                <div class="details-d">
+                    <div class="details-sub-d">
+                        <h5>Chocolate Milkshake</h5>
+                        <h5 class="price"> 25 LE </h5>
+                    </div>
+                    <p>chocolate milkshake with oreo and icecream at the top</p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>
+            </div>
+
+            <!-- breakfast -->
+            <div class="breakfast" style="display: block;" id="brk">
+                <div class="heading">
+                    <h1>BREAKFAST</h1>
+                    <h3>&mdash;Menu info&mdash;</h3>
+                    <div class="dd">
+                        <button class="ad">Add</button>
+                    </div>
+                </div>
+                <div class="breakfast-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/eggs vegetables.jfif" >
+                </div>
+                <div class="details-d">
+                    <div class="details-sub-d">
+                        <h5>Eggs</h5>
+                        <h5 class="price"> 15LE </h5>
+                    </div>
+                    <p> eggs with vegetables</p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>   
+                <div class="breakfast-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/eggs pasterma.jfif" >
+                </div>        
+                <div class="details-b">
+                    <div class="details-sub-b">
+                        <h5>Eggs</h5>
+                        <h5 class="price"> 15LE </h5>
+                    </div>
+                    <p> eggs with pasterma</p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>   
+                <div class="breakfast-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/egg sausage.jfif" >
+                </div>             
+                <div class="details-b">
+                    <div class="details-sub-b">
+                        <h5>Eggs</h5>
+                        <h5 class="price"> 20LE </h5>
+                    </div>
+                    <p> eggs with sausage</p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>                
+                <div class="breakfast-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/beans.jfif" > 
+                </div>             
+                <div class="details-b">
+                    <div class="details-sub-b">
+                        <h5>beans</h5>
+                        <h5 class="price"> 10LE </h5>
+                    </div>
+                    <p> beans with some salt and onion oil</p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>                
+                <div class="breakfast-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/beans tomatos.jfif" > 
+                </div>             
+                <div class="details-b">
+                    <div class="details-sub-b">
+                        <h5>beans</h5>
+                        <h5 class="price"> 10LE </h5>
+                    </div>
+                    <p> beans with tomatos</p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>                
+                <div class="breakfast-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/fries.jfif" > 
+                </div>             
+                <div class="details-b">
+                    <div class="details-sub-b">
+                        <h5>fries</h5>
+                        <h5 class="price"> 5LE </h5>
+                    </div>
+                    <p> fries with salt</p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>                
+            </div>
+
+            <!-- lunch -->
+            <div class="Lunch" style="display: none;" id="lun">
+                <div class="heading">
+                    <h1>LUNCH</h1>
+                    <h3>&mdash;Menu info&mdash;</h3>
+                    <div class="dd">
+                        <button class="ad">Add</button>
+                    </div>
+                </div>
+                <div class="Lunch-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/burger.webp" >
+                </div>
+                <div class="details-l">
+                    <div class="details-sub-l">
+                        <h5>Burger</h5>
+                        <h5 class="price"> 50LE </h5>
+                    </div>
+                    <p> Slices Of Raw Onion, Lettuce, Bacon, Mayonnaise, And Other Ingredients Add Flavor</p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>        
+                <div class="Lunch-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/pizza.jpg" >
+                </div>        
+                <div class="details-l">
+                    <div class="details-sub-l">
+                        <h5>Pizza</h5>
+                        <h5 class="price"> 79LE </h5>
+                    </div>
+                    <p> Slices of raw onion, lettuce, bacon, mayonnaise, and other ingredients add flavor</p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>   
+                <div class="Lunch-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/wings.jpg" >
+                </div>             
+                <div class="details-l">
+                    <div class="details-sub-l">
+                        <h5>Wings</h5>
+                        <h5 class="price"> 40LE</h5>
+                    </div>
+                    <p> wings with katshap, mayonnaise and other ingredients</p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>                
+                <div class="Lunch-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/salad.jpg" > 
+                </div>             
+                <div class="details-l">
+                    <div class="details-sub-l">
+                        <h5>Salad</h5>
+                        <h5 class="price"> 30LE </h5>
+                    </div>
+                    <p> Salad of tomatos, lettuce and cucumber</p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>                
+                <div class="Lunch-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/fried chekein.jpg" > 
+                </div>             
+                <div class="details-l">
+                    <div class="details-sub-l">
+                        <h5>Fried Chicken</h5>
+                        <h5 class="price"> 50LE </h5>
+                    </div>
+                    <p> fried chicken with </p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>                
+                <div class="Lunch-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/meatgril.jpg" > 
+                </div>             
+                <div class="details-l">
+                    <div class="details-sub-l">
+                        <h5>MeatGril</h5>
+                        <h5 class="price"> 60LE </h5>
+                    </div>
+                    <p> meatgril with katshap, mayonnaise and other ingredients</p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>                
+            </div>
 
 
-
-
-
-        <script>
-            //slidShow
-            var myIndex = 0;
-            carousel();
-        
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                }
-                myIndex++;
-                if (myIndex > x.length) {
-                myIndex = 1
-                }    
-                x[myIndex-1].style.display = "block";  
-                setTimeout(carousel, 2000); // Change image every 2 seconds
-            }
-        </script>
+            <!-- Dinner -->
+            <div class="Dinner" style="display: none;" id="lun">
+                <div class="heading">
+                    <h1>DINNER</h1>
+                    <h3>&mdash;Menu info&mdash;</h3>
+                    <div class="dd">
+                        <button class="ad">Add</button>
+                    </div>
+                </div>
+                <div class="Diner-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/dinner.jfif" >
+                </div>
+                <div class="details-d">
+                    <div class="details-sub-d">
+                        <h5>Family dinner</h5>
+                        <h5 class="price"> 200LE </h5>
+                    </div>
+                    <p> All kind of mahshy , kofta, kabab, hmam, mombar</p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>        
+                <div class="Dinner-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/dinner 2.jfif" >
+                </div>        
+                <div class="details-d">
+                    <div class="details-sub-d">
+                        <h5>Sea food</h5>
+                        <h5 class="price"> 200LE </h5>
+                    </div>
+                    <p> salamon, tona, gambary, rice, thina, salad, bread</p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>   
+                <div class="Dinner-item" style="position: relative; top: 18px;"> 
+                    <img src="Images/dinner 3.jfif" >
+                </div>             
+                <div class="details-d">
+                    <div class="details-sub-d">
+                        <h5>molokhia</h5>
+                        <h5 class="price"> 190LE</h5>
+                    </div>
+                    <p> molokhia with some rice, bread, chicken or hamam</p>
+                    <button class="del">Delete </button>
+                    <button class="edi" > Edit </button>
+                </div>                                
+            </div>
+        </div>        
     </body>
 </html>
