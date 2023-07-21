@@ -107,27 +107,7 @@ h3 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
-.dd {
-    display: flex;
-    position: relative;
-    top: 170px;
-    right: -170px;
-}
-.ad {
-    background: rgb(225, 190, 74);
-    border: none;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 600;
-    border-radius: 7px;
-    width: 97px;
-    position: relative;
-    cursor: pointer;
-    /* right: -942px; */
-    bottom: 112px;
-    height: 48px;
-    margin-left: 30%;
-}
+
 img{
     position: relative;
     left: 110px;
@@ -167,6 +147,20 @@ img{
     cursor: pointer;
     left: 274px;
     bottom: 63px;
+    height: 50px;
+}
+.add{
+    background: rgb(225, 190, 74);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+    position: relative;
+    left: 550px;
+    bottom: 127px;
     height: 50px;
 }
 
@@ -209,7 +203,7 @@ img{
     background-color: white;
     font-family: 'Poppins', sans-serif;
     padding: 0 10px 30px 10px;
-    display: block;
+    display: none;
     grid-template-columns: repeat(auto-fit,minmax(350px , 1fr));
     grid-gap: 20px 40px;
     margin-right: 2%;
@@ -300,7 +294,7 @@ img{
     background-color: white;
     font-family: 'Poppins', sans-serif;
     padding: 0 10px 30px 10px;
-    display: none;
+    display: block;
     grid-template-columns: repeat(auto-fit,minmax(350px , 1fr));
     grid-gap: 20px 40px;
     margin-right: 2%;
