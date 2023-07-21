@@ -73,7 +73,7 @@ right{
     top: 1px;
    overflow-y: auto;
    overflow-x: hidden;
-   background: rgba(0, 0, 0, 0.7) url(../photos/food2.webp)  fixed;
+   background: rgba(0, 0, 0, 0.7) url(photos\food2.webp)  fixed;
    background-size: cover;
    background-blend-mode: darken;
    
