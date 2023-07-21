@@ -311,4 +311,50 @@
             </div>
         </div>
 </div>
+<div class="Account" id="acc" style="margin:auto; width: 300px ; padding-left: 120px; height: 450px; background-color: rgb(203, 224, 243); display: none;" >
+    <h1> Admin name: Dr.Salwa</h1> 
+    <h1>ID:1234</h1>
+    <h2>change password</h2>
+    <form action='#' method='post' onsubmit='return validateForm()' >
+        
+        <input type="text"name="user" id="inputuser" placeholder="Enter new username" required >
+        <div id='username' class='err'></div>
+        <input type="password"name="psw" id="inputpass" placeholder="Enter new Password" required >
+        <div id='password' class='err'></div>
+        <button type="submit" class="registerbtn" style="margin-left: 3%; ">Update password</button>
+    </form>
+    
+    <script>
+        function validateForm() {
+            var username = document.getElementById("inputuser").value;
+            var password = document.getElementById("inputpass").value;
+            var usernameError = document.getElementById("username");
+            var passwordError = document.getElementById("password");
+            
+
+            var valid = true;
+
+            if (username === "admin") {
+                usernameError.innerHTML = "Already your username";
+                valid = false;
+            } else {
+                usernameError.innerHTML = "";
+            }
+
+            if (password === "admin123") {
+                passwordError.innerHTML = "Already your password";
+                valid = false;
+            } else {
+                passwordError.innerHTML = "";
+            }
+           
+
+            return valid;
+        }
+    </script>
+
+    
+
+
+</div>
     
