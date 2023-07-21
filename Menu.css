@@ -62,7 +62,6 @@ div {
     left: 20%;
     bottom: 0;
     font-size: 25px;
-    display: block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -314,4 +313,13 @@ img{
 .details-sub-c h5 {
     font-weight: 600;
     font-size: 18px;
+}
+.del:hover{
+    background: red;
+}
+.edi:hover{
+    background: #8de02c;
+}
+.add:hover{
+    background: rgb(168, 141, 54);
 }
