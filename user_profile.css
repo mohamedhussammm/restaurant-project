@@ -1,0 +1,55 @@
+body , html{
+width: 100%;
+height: 100%;
+}
+li img {
+    width: 10%;
+    max-width: 60px;
+}
+ul li:hover{
+    cursor:pointer;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: rgb(28, 186, 28) ;
+}
+ul li{
+    transition: 0.5s;
+    color:white;
+}
+ul{
+    margin-top:20px;
+    margin-left: -20px;
+    list-style: none;
+    float:left;
+}
+.side_panel{
+     margin-left: -0.6%;
+    margin-top: -0.6%; 
+    overflow: auto;
+    height: 100%;
+    width: 25%;
+    background-color: rgb(65,69,65);
+}
+
+ul{
+    width: 100%;
+}
+
+@media only screen and (max-width:700px){
+    .side_panel::-webkit-scrollbar{
+        display: none;
+    }
+    li img{
+        width:5%;
+        min-width: 30px;
+    }
+    .side_panel{
+        height: 30%;
+        width: 100%;
+    }
+    
+}
+.logooo{
+    margin-left: 50%;
+    margin-top: -35%;
+}
