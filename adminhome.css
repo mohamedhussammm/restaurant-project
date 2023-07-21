@@ -216,3 +216,61 @@ right{
     grid-gap: 30px;
     
 }
+.cardBox{
+   
+
+    position: relative;
+  
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+   
+
+
+}
+
+.cardBox .card{
+    position: relative;
+    background-color: bisque;
+    padding: 30px;
+    box-shadow: 0 7px 25px rgb(228, 68, 5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-right: 5%;
+    padding-bottom: 5px;
+   
+ 
+
+
+}
+
+.cardBox .card .numbers{
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #f0743a;
+
+}
+
+.cardBox .card .cardName{
+    color: black;
+    font-size: 1.1rem;
+    margin-top: 5px;
+
+}
+
+.cardBox .card .iconBx{
+    font-size: 3.5rem;
+    color: #f0743a;
+}
+
+.cardBox .card:hover{
+    background-color:#f0743a
+}
+.cardBox .card:hover .numbers,.cardBox .card:hover .iconBx{
+    color: rgb(0, 0, 0);
+}
