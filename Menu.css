@@ -83,19 +83,7 @@ div {
     background-size: cover;
     background-blend-mode: darken;
 }
-.drinks{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: white;
-    font-family: 'Poppins', sans-serif;
-    padding: 0 10px 30px 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px , 1fr));
-    grid-gap: 20px 40px;
-    margin-right: 2%;
-    margin-left: 2%;
-}
+
 .heading {
     background-color: #e84343;
     color: #fff;
@@ -146,20 +134,7 @@ img{
     border-radius: 8px;
     width: 50%;
 }
-.details-d {
-    padding: 20px 10px;
-    display: grid;
-    grid-template-rows: auto 1fr 50px;
-    grid-row-gap: 15px;
-}
-.details-sub-d {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.details-sub-d h5 {
-    font-weight: 600;
-    font-size: 18px;
-}
+
 .price {
     text-align: right;
 }
@@ -194,6 +169,52 @@ img{
     bottom: 63px;
     height: 50px;
 }
+
+
+/* drinks */
+.drinks{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 10px 30px 10px;
+    grid-template-columns: repeat(auto-fit,minmax(350px , 1fr));
+    grid-gap: 20px 40px;
+    margin-right: 2%;
+    margin-left: 2%;
+    display: none;
+}
+.details-d {
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+}
+.details-sub-d {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.details-sub-d h5 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+/* breakfast  */
+.breakfast{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 10px 30px 10px;
+    display: block;
+    grid-template-columns: repeat(auto-fit,minmax(350px , 1fr));
+    grid-gap: 20px 40px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
 .details-b {
     padding: 20px 10px;
     display: grid;
@@ -208,19 +229,9 @@ img{
     font-weight: 600;
     font-size: 18px;
 }
-.breakfast{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: white;
-    font-family: 'Poppins', sans-serif;
-    padding: 0 10px 30px 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px , 1fr));
-    grid-gap: 20px 40px;
-    margin-right: 2%;
-    margin-left: 2%;
-}
+
+
+/* lunch  */
 .Lunch{
     padding: 0;
     margin: 0;
@@ -228,7 +239,7 @@ img{
     background-color: white;
     font-family: 'Poppins', sans-serif;
     padding: 0 10px 30px 10px;
-    display: grid;
+    display: none;
     grid-template-columns: repeat(auto-fit,minmax(350px , 1fr));
     grid-gap: 20px 40px;
     margin-right: 2%;
@@ -248,6 +259,9 @@ img{
     font-weight: 600;
     font-size: 18px;
 }
+
+
+/* dinner  */
 .Dinner{
     padding: 0;
     margin: 0;
@@ -255,7 +269,7 @@ img{
     background-color: white;
     font-family: 'Poppins', sans-serif;
     padding: 0 10px 30px 10px;
-    display: grid;
+    display: none;
     grid-template-columns: repeat(auto-fit,minmax(350px , 1fr));
     grid-gap: 20px 40px;
     margin-right: 2%;
@@ -272,6 +286,37 @@ img{
     grid-template-columns: auto auto;
 }
 .details-sub-d h5 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+
+/* composes */
+.compose{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 10px 30px 10px;
+    display: none;
+    grid-template-columns: repeat(auto-fit,minmax(350px , 1fr));
+    grid-gap: 20px 40px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.details-c {
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+}
+.details-sub-c {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.details-sub-c h5 {
     font-weight: 600;
     font-size: 18px;
 }
