@@ -71,11 +71,138 @@ right{
     width: 81vw;
     height: 100vh;
     top: 1px;
-    /* background-color:rgba(34, 33, 33, 0.521); */
    overflow-y: auto;
    overflow-x: hidden;
    background: rgba(0, 0, 0, 0.7) url(../photos/food2.webp)  fixed;
    background-size: cover;
    background-blend-mode: darken;
    
+}
+.menu{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+    font-family:'Poppins', sans-serif;
+    padding: 0 10px 30px 10px ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px , 1fr));
+    grid-gap: 20px 40px;
+    margin-right: 2%;
+    margin-left: 2%;
+    
+}
+.dd{
+    display: flex;
+    position: relative;
+    top: 170px;
+    right: -170px;
+}
+.heading{
+    background-color: #e84343;
+    color: #fff;
+    margin-bottom: 53px;
+    padding: 0px 0px;
+    grid-column: 1/-1;
+    text-align: center;
+}
+.heading h1{
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.food-items{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    transition: .2s ease-in-out;
+    bottom: 10px;
+}
+.food-items img{
+    position: relative;
+    width: 100%;
+    height: 280px;
+    border-radius: 15px 15px 0 0 ;
+    cursor: pointer;
+    left: 10px;
+}
+.menu h1{
+    grid-column: 1/-1;
+    text-align: center;
+}
+.details-m{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+}
+.details-sub-m{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.details-sub-m h5 {
+    font-weight: 600;
+    font-size: 18px;
+}
+.price{
+    text-align: right;
+}
+.details-m p {
+    color: #6f6f6f;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    align-self: stretch;
+}
+.edi{
+    background: green;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 7px;
+    width: 92px;
+    position: relative;
+    cursor: pointer;
+    left: 274px;
+    bottom: 63px;
+    height: 50px;
+}
+.del{
+    background: #e84343;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.ad{
+    background: rgb(225, 190, 74);
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 7px;
+    width: 97px;
+    position: relative;
+    cursor: pointer;
+    bottom: 112px;
+    height: 48px;
+    margin-left: 30%;
+   
+}
+.del:hover{
+    background: red;
+}
+.edi:hover{
+    background: #8de02c;
+}
+.ad:hover{
+    background: #3a8ff0;
 }
