@@ -70,16 +70,17 @@ div {
     cursor: pointer;
     color: white;
 }
+
+/* rightshow */
 .right{
     position: absolute;
     right: -30px;
     width: 81vw;
     height: 100vh;
     top: 1px;
-    /* background-color: rgba(34, 33, 33, 0.521); */
     overflow-y: auto;
     overflow-x: hidden;
-    background: rgba(0, 0, 0, 0.7) url(../photos/food2.webp) fixed;
+    background: rgba(0, 0, 0, 0.7) url(photos/food2.webp) fixed;
     background-size: cover;
     background-blend-mode: darken;
 }
@@ -233,7 +234,7 @@ img{
     background-color: white;
     font-family: 'Poppins', sans-serif;
     padding: 0 10px 30px 10px;
-    display: none;
+    display: block;
     grid-template-columns: repeat(auto-fit,minmax(350px , 1fr));
     grid-gap: 20px 40px;
     margin-right: 2%;
@@ -294,7 +295,7 @@ img{
     background-color: white;
     font-family: 'Poppins', sans-serif;
     padding: 0 10px 30px 10px;
-    display: block;
+    display: none;
     grid-template-columns: repeat(auto-fit,minmax(350px , 1fr));
     grid-gap: 20px 40px;
     margin-right: 2%;
