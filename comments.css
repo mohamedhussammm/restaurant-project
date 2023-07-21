@@ -1,0 +1,39 @@
+body {
+    background-color: #F5F5F5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.opinion {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.opinion h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+.opinion p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.opinion .author {
+    font-size: 14px;
+    font-style: italic;
+}
+.opinion .rating {
+    font-size: 24px;
+    color: #F8D32B;
+    margin: 10px 0;
+}
