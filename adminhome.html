@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <title>Admin Panel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="adminhome.css" rel="stylesheet">
+    <link href="comments.css" rel="stylesheet">
+    <link href="users.css" rel="stylesheet">
+
+
+
+    
+</head>
+<script>
+    let current="ordd";
+    function change_view(target){
+        document.getElementById(current).style.display='none';
+        document.getElementById(target).style.display='block';
+        current=target;
+    }
+</script>
+<div id="side_panel">
+    <ul>
+        <li onclick="change_view('uss')"> <img src="photos/profile.png" alt=""><span> Users</span></li>
+        <hr>
+        <li onclick="change_view('mmn')"> <img src="photos/playlist.png" alt=""><span> Menu</span></li>
+        <hr>
+        <li onclick="change_view('ordd')"> <img src="photos/website.png" alt=""><span> Orders</span>
+            
+        </li>
+        <hr>
+        <li onclick="change_view('custt')"> <img src="photos/customer.png" alt=""><span> Customers</span></li>
+        <hr>
+        <li onclick="change_view('acc')"> <img src="photos/user.png" alt=""><span> Your Account</span></li>
+        <hr>
+        <li onclick="change_view('stt')"> <img src="photos/analytics.png" alt=""><span> Statistics</span></li>
+        <hr>
+        <li onclick="change_view('msg-area')"> <img src="photos/chat.png" alt=""><span> Comments</span>
+            
+        </li>
+        <hr>
+        <li onclick="change_view(logout)" > <img src="photos/log-out.png" alt=""><span> Log Out</span></li>
+        <hr>
+    </ul>
+</div>
+<div class="right">
+
+
+    <div class="main-content" style="display: none; background-color: white;" id="uss">
+        <div class="table-title">
+            <div class="row">
+                <div class="col-sm-6 p-0 d-flex justify-content-lg-start justify-content-center">
+                    <h2 class="ml-lg-2">Manage Employees</h2>
+                </div>
+                <div class="col-sm-6 p-0 d-flex justify-content-lg-end justify-content-center">
+                    <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
+                        <i class="material-icons">&#xE147;</i> <span>Add New Employee</span></a>
+                    <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal">
+                        <i class="material-icons">&#xE15C;</i> <span>Delete</span></a>
+                </div>
+            </div>
+        </div>
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        <span class="custom-checkbox">
+                            <input type="checkbox" id="selectAll">
+                            <label for="selectAll"></label>
+                        </span>
+                    </th>
+                <th>Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="custom-checkbox">
+                            <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                            <label for="checkbox1"></label>
+                        </span>
+                    </td>
+                    <td>jana elmorshedy</td>
+                    <td>janaelmorshedy@gmail.com</td>
+                    <td> Cairo,Egypt</td>
+                    <td> 01112398745</td>
+                    <td>
+                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="custom-checkbox">
+                            <input type="checkbox" id="checkbox2" name="options[]" value="1">
+                            <label for="checkbox2"></label>
+                        </span>
+                    </td>
+                    <td>Mohamed Hussam</td>
+                    <td>Mohamedhussam@Gmail.com</td>
+                    <td> Cairo, Egypt</td>
+                    <td> 01145378905</td>
+                    <td>
+                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="custom-checkbox">
+                            <input type="checkbox" id="checkbox3" name="options[]" value="1">
+                            <label for="checkbox3"></label>
+                        </span>
+                    </td>
+                    <td>Ahmed Ayman</td>
+                    <td>AhmedAyman@Gmail.com</td>
+                    <td> Cairo,Egypt</td>
+                    <td>01145678912</td>
+                    <td>
+                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="custom-checkbox">
+                            <input type="checkbox" id="checkbox4" name="options[]" value="1">
+                            <label for="checkbox4"></label>
+                        </span>
+                    </td>
+                    <td>Amgad Emad</td>
+                    <td>AmgadEmad@Gmail.com</td>
+                    <td> Cairo,Egypt</td>
+                    <td>01111287363</td>
+                    <td>
+                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="custom-checkbox">
+                            <input type="checkbox" id="checkbox5" name="options[]" value="1">
+                            <label for="checkbox5"></label>
+                        </span>
+                    </td>
+                    <td>Dr salwa</td>
+                    <td>Drsalwa@Gmail.com</td>
+                    <td> Cairo, Egypt</td>
+                    <td>01145612378</td>
+                    <td>
+                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="menu" id="mmn" style="display: none;">
+        <div class="heading">
+
+            <h1>Restuernt food</h1>
+            <h3>&mdash;Menu info &mdash;</h3>
+            <div class="dd"><button class="ad">Add</button></div>
+        </div>
+        <div class="food-item" style="
+        position: relative;
+        top: 18px;">
+            <img src="photos/Hamburger.jpg" width="50%" style="
+            position: relative;
+            left: 107px;
+            border-radius: 8px;">
+            <div class="details-m">
+            <div class="details-sub-m">
+                <h5>Burger</h5>
+                <h5 class="price"> 59 LE </h5>
+            </div>
+            <p> Slices of raw onion, lettuce, bacon, mayonnaise, and other ingredients add flavor</p>
+            <button class="del">Delete </button>
+            <button class="edi" > Edit </button>
+             </div>
+        </div>
+
+        <div class="food-item" style="
+        position: relative;
+        top: 18px;">
+            <img src="photos/pizza.jpg"width="50%" style="
+            position: relative;
+            left: 107px;
+            border-radius: 8px;">
+            <div class="details-m">
+            <div class="details-sub-m">
+                <h5>Pizza</h5>
+                <h5 class="price"> 80 LE </h5>
+            </div>
+            <p> Slices of raw onion, lettuce, bacon, mayonnaise, and other ingredients add flavor</p>
+            <button class="del">Delete </button>
+            <button class="edi" > Edit </button>
+              </div>
+        </div>
+
+        <div class="food-item">
+            <img src="photos/wings.jpg"width="40%" style="
+            position: relative;
+            left: 107px;
+            border-radius: 8px;">
+            <div class="details-m">
+            <div class="details-sub-m">
+                <h5>Wings</h5>
+                <h5 class="price"> 75 LE </h5>
+            </div>
+            <p> Slices of raw onion, lettuce, bacon, mayonnaise, and other ingredients add flavor</p>
+            <button class="del">Delete </button>
+            <button class="edi" > Edit </button>
+
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="photos/salad.jpg" width="55%" style="
+            position: relative;
+            left: 107px;
+            border-radius: 8px;">
+            <div class="details-m">
+            <div class="details-sub-m">
+                <h5>Salad</h5>
+                <h5 class="price"> 40 LE </h5>
+            </div>
+            <p> Slices of raw onion, lettuce, bacon, mayonnaise, and other ingredients add flavor</p>
+            <button class="del">Delete </button>
+            <button class="edi" > Edit </button>
+            </div>
+        </div>
+        <div class="food-item">
+            <img src="photos/fried chekein.jpg" width="50%" style="
+            position: relative;
+            left: 107px;
+            border-radius: 8px;">
+            <div class="details-m">
+            <div class="details-sub-m">
+                <h5>Fried Chicken</h5>
+                <h5 class="price"> 100 LE </h5>
+            </div>
+            <p> Slices of raw onion, lettuce, bacon, mayonnaise, and other ingredients add flavor</p>
+            <button class="del">Delete </button>
+            <button class="edi" > Edit </button>
+            </div>
+            <div class="food-item"style="
+            position: relative;
+            left: 107px;
+            top:0px;">
+                <img src="photos/meatgril.jpg" width="60%" style="
+                position: relative;
+                left: 107px;
+                top:0px; border-radius: 8px;">
+                
+                <div class="details-m">
+                <div class="details-sub-m">
+                    <h5>Meatgrill</h5>
+                    <h5 class="price"> 59 LE </h5>
+                </div>
+                <p> Slices of raw onion, lettuce, bacon, mayonnaise, and other ingredients add flavor</p>
+                <button class="del">Delete </button>
+                <button class="edi" > Edit </button>
+                </div>
+            </div>  
+            
+        </div>  
+    </div>
+    <div id ="msg-area" style="display:none;" >
+        <div class="container">
+            <div class="opinion">
+                <h3>Great food and service!</h3>
+                <p>The food was absolutely delicious and the service was top-notch. Our waiter was very attentive and made great recommendations. Highly recommend this restaurant!</p>
+                <div class="author">- John Doe</div>
+                <div class="rating">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
+            </div>
+            <div class="opinion">
+                <h3>Disappointing experience</h3>
+                <p>I had high hopes for this restaurant, but unfortunately the food was underwhelming and the service was slow. Would not recommend.</p>
+                <div class="author">- Jane Smith</div>
+                <div class="rating">&#9733; &#9733; &#9734; &#9734; &#9734;</div>
+            </div>
+            <div class="opinion">
+                <h3>Great atmosphere</h3>
+                <p>The restaurant has a very cozy and intimate atmosphere, perfect for a romantic dinner. The food was good and the service was friendly. Would come back again!</p>
+                <div class="author">- Mike Johnson</div>
+                <div class="rating">&#9733; &#9733; &#9733; &#9734; &#9734;</div>
+            </div>
+            <div class="opinion">
+                <h3>Amazing desserts!</h3>
+                <p>The desserts were definitely the highlight of our meal. We tried the chocolate cake and it was absolutely delicious. Would recommend for a sweet treat!</p>
+                <div class="author">- Sarah Lee</div>
+                <div class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+            </div>
+            <div class="opinion">
+                <h3>Decent food, but overpriced</h3>
+                <p>The food was decent, but not amazing. However, we felt that the prices were too high for what we got. Probably wouldn't come back.</p>
+                <div class="author">- Michael Brown</div>
+                <div class="rating">&#9733; &#9733; &#9734; &#9734; &#9734;</div>
+            </div>
+        </div>
+</div>
+<div class="Account" id="acc" style="margin:auto; width: 300px ; padding-left: 120px; height: 450px; background-color: rgb(203, 224, 243); display: none;" >
+    <h1> Admin name: Dr.Salwa</h1> 
+    <h1>ID:1234</h1>
+    <h2>change password</h2>
+    <form action='#' method='post' onsubmit='return validateForm()' >
+        
+        <input type="text"name="user" id="inputuser" placeholder="Enter new username" required >
+        <div id='username' class='err'></div>
+        <input type="password"name="psw" id="inputpass" placeholder="Enter new Password" required >
+        <div id='password' class='err'></div>
+        <button type="submit" class="registerbtn" style="margin-left: 3%; ">Update password</button>
+    </form>
+    
+    <script>
+        function validateForm() {
+            var username = document.getElementById("inputuser").value;
+            var password = document.getElementById("inputpass").value;
+            var usernameError = document.getElementById("username");
+            var passwordError = document.getElementById("password");
+            
+
+            var valid = true;
+
+            if (username === "admin") {
+                usernameError.innerHTML = "Already your username";
+                valid = false;
+            } else {
+                usernameError.innerHTML = "";
+            }
+
+            if (password === "admin123") {
+                passwordError.innerHTML = "Already your password";
+                valid = false;
+            } else {
+                passwordError.innerHTML = "";
+            }
+           
+
+            return valid;
+        }
+    </script>
+</div>
+<div class="cardBox" style="display: none;" id="stt">
+    <div class="card">
+       <div>
+        <div class="numbers">1,504</div>
+        <div class="cardName">Daily Views</div>
+       </div>
+
+    </div>
+
+    <div class="card">
+        <div>
+         <div class="numbers">80</div>
+         <div class="cardName">sales</div>
+        </div>
+
+     </div>
+
+     <div class="card">
+        <div>
+         <div class="numbers">504</div>
+         <div class="cardName">Comments</div>
+        </div>
+
+     </div>
+
+     <div class="card">
+        <div>
+         <div class="numbers">7000$</div>
+         <div class="cardName">Earning</div>
+        </div>
+
+     </div>
+     <div class="card">
+        <div>
+        <div class="numbers">150</div>
+         <div class="cardName">Orders Cancelled</div>
+        </div>
+     </div>
+     <div class="card">
+        <div>
+        <div class="numbers">350</div>
+         <div class="cardName">Orders Edited</div>
+        </div>
+        <div class="iconBx">
+            <ion-icon name="edit-outline"></ion-icon>
+        </div>
+
+     </div>
+     <div class="card">
+        <div>
+        <div class="numbers">770</div>
+         <div class="cardName">Most Ordered:Beef Burger</div>
+        </div>
+     </div>
+     <div class="card">
+        <div>
+        <div class="numbers">500</div>
+         <div class="cardName">Customers Rated  <strong> 4 or 5 stars </strong> </div>
+        </div>
+     </div>
+     <div class="card">
+        <div>
+        <div class="numbers">250</div>
+         <div class="cardName">2 Products got  <strong>5 stars </strong>by 250 Customers </div>
+        </div>
+     </div>
+</div>
+<div class="details" style="width: 100%;" >
+    <div class="recentOrders"  id="ordd" style="width: 1100px; height: 700px; top: -30px; left: 5px;">
+        <div class="cardHeader">
+            <h2>Recent Orders</h2>
+            <a href="#" class="btnv">View All</a>
+        
+        </div>
+
+        <table style="width: 100%;">
+            <thead>
+                <tr>
+                    <td>
+                        Name
+                    </td>
+                    <td>
+                        Price
+                    </td> <td>
+                        Payment
+                    </td> <td>
+                      Status
+                    </td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                       Pizza
+                    </td>
+                    <td>
+                       120$
+                    </td> <td>
+                       Paid
+                    </td> <td>
+                     <span class="delivered">Delivered</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                       Burger
+                    </td>
+                    <td>
+                       100$
+                    </td> <td>
+                       Paid
+                    </td> <td>
+                     <span class="pen">Pending</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                       Fried Chicken
+                    </td>
+                    <td>
+                       150$
+                    </td> <td>
+                       Paid
+                    </td> <td>
+                     <span class="ret">Return</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                       Pizza
+                    </td>
+                    <td>
+                       120$
+                    </td> <td>
+                       Paid
+                    </td> <td>
+                     <span class="in">in progress</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       Burger
+                    </td>
+                    <td>
+                       100$
+                    </td> <td>
+                       Paid
+                    </td> <td>
+                     <span class="delivered">Delivered</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                       Fried Chicken
+                    </td>
+                    <td>
+                       150$
+                    </td> <td>
+                       Paid
+                    </td> <td>
+                     <span class="pen">Pending</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                       Pizza
+                    </td>
+                    <td>
+                       120$
+                    </td> <td>
+                       Paid
+                    </td> <td>
+                     <span class="ret">Return</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                       Burger
+                    </td>
+                    <td>
+                       100$
+                    </td> <td>
+                       Paid
+                    </td> <td>
+                     <span class="in">in progress</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="recentCustomers" style="display: none;" id="custt">
+        <div class="cardHeader">
+            <h2>Recent Customers</h2>
+        </div>
+        <table>
+            <tr>
+                <td><h4>Jana <br><span>Egypt</span></h4></td>
+            </tr>
+
+            <tr>
+                <td><h4>Mohamed <br><span>Egypt</span></h4></td>
+            </tr>
+
+            <tr>
+                <td><h4>Ahmed <br><span>Egypt</span></h4></td>
+            </tr>
+
+            <tr>
+                <td><h4>Amgad <br><span>Egypt</span></h4></td>
+            </tr>
+
+            <tr>
+                <td><h4>Dr.Salwa<br><span>Egypt</span></h4></td>
+            </tr>
+
+            <tr>
+                <td><h4>Salah <br><span>Egypt</span></h4></td>
+            </tr>
+        </table>
+    </div>
+
+
+</div>
+</div>                  
+
+</body>
+
+</html>
+
+    
