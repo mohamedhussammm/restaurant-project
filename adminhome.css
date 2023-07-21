@@ -2,7 +2,19 @@
     padding: 0;
     margin: 0;
 }
-
+body{
+    background: rgba(0, 0, 0, 0.7) url(Images/food2.webp) fixed;   
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    line-height: 1.8;
+    font-family: 'Poppins',sans-serif;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+}
 
 body,html{
     height: 100%;
@@ -65,7 +77,7 @@ color: white;
     -webkit-transform: rotate(360deg);
    transform: rotate(360deg);
 }
-right{
+.right{
     position: absolute;
     right: -30px;
     width: 81vw;
@@ -73,7 +85,7 @@ right{
     top: 1px;
    overflow-y: auto;
    overflow-x: hidden;
-   background: rgba(0, 0, 0, 0.7) url(../photos/food2.webp)  fixed;
+   background: rgba(0, 0, 0, 0.7) url(photos\food2.webp)  fixed;
    background-size: cover;
    background-blend-mode: darken;
    
