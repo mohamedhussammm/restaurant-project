@@ -231,5 +231,49 @@ border-radius: 4px;
     .layer:hover h3{
          bottom: 49%;
          opacity: 1;
+    }.problems{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+    .problems h1{
+        color: #fff;
+    
+    }
+    
+    .problems p{
+    
+        color: #fff
+    }
+    
+    
+    .foodcol3{
+        flex-basis: 31%;
+        border-radius: 10px;
+        margin-bottom: 5%;text-align: left;
+    
+    }
+    
+    .foodcol3 img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    
+    .foodcol3 p{
+        padding: 0;
+        color: #fff
+    
+    }
+    
+    .foodcol3 h3{
+       
+        color:orangered;
+        margin-top: 16px;
+        margin-bottom: 15px;
+        text-align: left;
+    
     }
         
