@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check Out</title>
     <link rel="stylesheet" href="Check_Out.css">
-    <script src="Check_Out.js"></script>
+    
 </head>
 <body>
     <div id="container">
@@ -151,7 +151,47 @@
             </div>
            
               <textarea name="" id="notes" cols="30" rows="10" placeholder="Add delivery notes here "></textarea>
-              <button id ="end">check out now </button>
+            
+              <button id="end" onclick ="startTimer()" >Checkout</button>
+              
+
     </div>
+    <div id="timer"></div>
+    
+    <script>
+        function startTimer() {
+          // Set the time limit to 5 minutes
+          var timeLimit = 5 * 60;
+          
+          // Get the timer element
+          var timerElement = document.getElementById("timer");
+    
+          // Set up the timer interval
+          var timerInterval = setInterval(function() {
+            // Calculate the remaining time
+            var minutes = Math.floor(timeLimit / 60);
+            var seconds = timeLimit % 60;
+    
+            // Display the remaining time
+            timerElement.innerHTML = "Time left To Edit: " + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+    
+            // Decrease the remaining time
+            timeLimit--;
+    
+            // Stop the timer when the time is up
+            if (timeLimit < 0) {
+              clearInterval(timerInterval);
+              timerElement.innerHTML = "Time's up!";
+            }
+          }, 1000);
+
+    
+    setTimeout(function() {
+        alert("Review your order");
+      },5000);
+       
+        }
+        
+      </script>
 </body>
 </html>
