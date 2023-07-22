@@ -276,4 +276,34 @@ border-radius: 4px;
         text-align: left;
     
     }
+    .rates{
+        width: 80%;
+        margin: auto;
+        padding-top: 100px;
+        text-align: center;
+    
+    }
+    
+    
+    .rates h1{
+        color: #fff;
+    }
+    
+    .therates{
+        flex-basis: 44%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        text-align: left;
+        background: #fff3f3;
+        padding: 25px;
+        cursor: pointer;
+        display: flex;
+    }
+    
+    
+    
+    .therates p{
+        color: orangered;
+    }
+    
         
