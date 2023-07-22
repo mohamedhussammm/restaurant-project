@@ -61,14 +61,6 @@ div {
     color: black;
     text-decoration: none;
 }
-/* .side_panel span{
-    position: relative;
-    left: 20%;
-    bottom: 0;
-    font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-} */
 .side_panel a:hover{
     cursor: pointer;
     color: white;
@@ -167,39 +159,7 @@ img{
     bottom: 127px;
     height: 50px;
 }
-
-
-/* drinks */
-.drinks{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: white;
-    font-family: 'Poppins', sans-serif;
-    padding: 0 10px 30px 10px;
-    grid-template-columns: repeat(auto-fit,minmax(350px , 1fr));
-    grid-gap: 20px 40px;
-    margin-right: 2%;
-    margin-left: 2%;
-    display: block;
-}
-.details-d {
-    padding: 20px 10px;
-    display: grid;
-    grid-template-rows: auto 1fr 50px;
-    grid-row-gap: 15px;
-}
-.details-sub-d {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.details-sub-d h5 {
-    font-weight: 600;
-    font-size: 18px;
-}
-
-
-/* breakfast  */
+/* breakfast */
 .breakfast{
     padding: 0;
     margin: 0;
@@ -207,7 +167,7 @@ img{
     background-color: white;
     font-family: 'Poppins', sans-serif;
     padding: 0 10px 30px 10px;
-    display: none;
+    display: block;
     grid-template-columns: repeat(auto-fit,minmax(350px , 1fr));
     grid-gap: 20px 40px;
     margin-right: 2%;
@@ -226,104 +186,4 @@ img{
 .details-sub-b h5 {
     font-weight: 600;
     font-size: 18px;
-}
-
-
-/* lunch  */
-.Lunch{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: white;
-    font-family: 'Poppins', sans-serif;
-    padding: 0 10px 30px 10px;
-    display: none;
-    grid-template-columns: repeat(auto-fit,minmax(350px , 1fr));
-    grid-gap: 20px 40px;
-    margin-right: 2%;
-    margin-left: 2%;
-}
-.details-l {
-    padding: 20px 10px;
-    display: grid;
-    grid-template-rows: auto 1fr 50px;
-    grid-row-gap: 15px;
-}
-.details-sub-l {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.details-sub-l h5 {
-    font-weight: 600;
-    font-size: 18px;
-}
-
-
-/* dinner  */
-.Dinner{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: white;
-    font-family: 'Poppins', sans-serif;
-    padding: 0 10px 30px 10px;
-    display: none;
-    grid-template-columns: repeat(auto-fit,minmax(350px , 1fr));
-    grid-gap: 20px 40px;
-    margin-right: 2%;
-    margin-left: 2%;
-}
-.details-d {
-    padding: 20px 10px;
-    display: grid;
-    grid-template-rows: auto 1fr 50px;
-    grid-row-gap: 15px;
-}
-.details-sub-d {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.details-sub-d h5 {
-    font-weight: 600;
-    font-size: 18px;
-}
-
-
-
-/* composes */
-.compose{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: white;
-    font-family: 'Poppins', sans-serif;
-    padding: 0 10px 30px 10px;
-    display: none;
-    grid-template-columns: repeat(auto-fit,minmax(350px , 1fr));
-    grid-gap: 20px 40px;
-    margin-right: 2%;
-    margin-left: 2%;
-}
-.details-c {
-    padding: 20px 10px;
-    display: grid;
-    grid-template-rows: auto 1fr 50px;
-    grid-row-gap: 15px;
-}
-.details-sub-c {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.details-sub-c h5 {
-    font-weight: 600;
-    font-size: 18px;
-}
-.del:hover{
-    background: red;
-}
-.edi:hover{
-    background: #8de02c;
-}
-.add:hover{
-    background: rgb(168, 141, 54);
 }
