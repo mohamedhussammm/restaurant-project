@@ -218,9 +218,9 @@ color: white;
 .ad:hover{
     background: #3a8ff0;
 }
-#Account{
+.Account{
+    text-align: left;
     position: relative;
-  
     width: 100%;
     padding: 20px;
     display: grid;
@@ -228,6 +228,22 @@ color: white;
     grid-gap: 30px;
     
 }
+.Account button{
+    width: 200px;
+    height: 35px;
+    margin-left: 0px;
+    margin-right: 100px;
+    margin-top: 90px;
+    border: none;
+    background-color:blue;
+    color: aliceblue;
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* .registerbtn{
+   margin-left: ;
+} */
 .cardBox{
    
 
@@ -496,7 +512,7 @@ color: white;
 /* a:hover{
     background-color: blue;
 } */
-button{
+.return button{
     width: 320px;
     height: 35px;
     margin-left: 130px;
