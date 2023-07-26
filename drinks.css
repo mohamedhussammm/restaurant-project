@@ -189,3 +189,13 @@ img{
     font-weight: 600;
     font-size: 18px;
 }
+.searchh{
+   
+    background: #fff;
+    width: 257px;
+    height: 100px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    margin: auto;
+}
