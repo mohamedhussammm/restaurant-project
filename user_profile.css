@@ -28,7 +28,7 @@ ul{
     float:left;
 }
 .side_panel{
-     margin-left: -0.6%;
+     margin-left: -2.0%;
     margin-top: -0.6%; 
     overflow: hidden;
     height: 100%;
@@ -53,6 +53,11 @@ ul{
         width: 100%;
     }
     
+}
+
+a{
+    color: white;
+    text-decoration: none
 }
 .background{
    overflow: hidden;
