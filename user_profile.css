@@ -40,21 +40,6 @@ ul{
     width: 100%;
 }
 
-@media only screen and (max-width:700px){
-    .side_panel::-webkit-scrollbar{
-        display: none;
-    }
-    li img{
-        width:5%;
-        min-width: 30px;
-    }
-    .side_panel{
-        height: 30%;
-        width: 100%;
-    }
-    
-}
-
 a{
     color: white;
     text-decoration: none
