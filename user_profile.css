@@ -30,7 +30,7 @@ ul{
 .side_panel{
      margin-left: -0.6%;
     margin-top: -0.6%; 
-    overflow: auto;
+    overflow: hidden;
     height: 100%;
     width: 25%;
     background-color: rgb(65,69,65);
@@ -53,4 +53,7 @@ ul{
         width: 100%;
     }
     
+}
+.background{
+   overflow: hidden;
 }
