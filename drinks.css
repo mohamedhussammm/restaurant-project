@@ -199,3 +199,10 @@ img{
     padding: 0 25px;
     margin: auto;
 }
+.searchh input{
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    
+    }
+    
