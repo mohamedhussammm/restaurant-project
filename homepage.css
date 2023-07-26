@@ -76,6 +76,7 @@ border-radius: 4px;
   top: 10px;
   
 }
+
 .search{
    
     background: #fff;
@@ -132,11 +133,18 @@ border-radius: 4px;
         cursor: pointer;
         
     }
+
+    .QR{
+      margin-top: 37%;
+        margin-left: 43.5%;       
+        padding: 20px;
+    }
+    
     .food{
         width: 80%;
         margin: auto;
         text-align: center;
-        padding-top: 700px;
+        padding-top: 700px;;
         color: #fff;
     }
     
