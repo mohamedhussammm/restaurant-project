@@ -23,8 +23,7 @@ ul li{
 ul{
     margin-top:20px;
     margin-left: -20px;
-    list-style: none;
-    float:left;
+    width: 100%;
 }
 .side_panel{
      margin-left: -2.0%;
@@ -33,10 +32,6 @@ ul{
     height: 100%;
     width: 25%;
     background-color: rgb(65,69,65);
-}
-
-ul{
-    width: 100%;
 }
 
 a{
