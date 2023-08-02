@@ -196,3 +196,19 @@ img{
 .add:hover{
     background: rgb(168, 141, 54);
 }
+.searchh{
+   
+    background: #fff;
+    width: 257px;
+    height: 100px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    margin: auto;
+}
+.searchh input{
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    
+    }

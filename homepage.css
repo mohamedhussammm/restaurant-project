@@ -25,7 +25,7 @@ body{
     color: orangered;
     margin-left: 15px;
     cursor: pointer;
-   position: fixed;
+   position: absolute;
    top: 30px;
 }
 
@@ -70,7 +70,7 @@ border-radius: 4px;
 }
 
 .navbar{
-    position:fixed;
+    position:absolute;
     z-index: 1;
   left: 250px;
   top: 10px;
