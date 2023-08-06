@@ -12,7 +12,7 @@ li img {
 }
 ul li:hover{
     cursor:pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 3px;
     background-color: orangered ;
 }
@@ -23,7 +23,7 @@ ul li{
 ul{
     margin-top:20px;
     margin-left: -20px;
-    width: 100%;
+    width: 94%;
 }
 .side_panel{
      margin-left: -2.0%;
